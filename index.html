@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Белка</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
@@ -25,7 +27,7 @@
 					<a href="#" class="fast-contacts__link">addres</a>
 				</li>
 				
-					<a href="#" class="header__burger">Бургер</a>
+				<a href="#" class="header__burger">Бургер</a>
 				
 			</ul>
 		</div>
@@ -57,6 +59,7 @@
 		</header>
 		
 		<section class="promo">
+			<div class="promo__container">
 				<h1 class="promo__title">Скалодром</h1>
 				<div class="promo__text">
 					<p>Заберись на вершину, не уезжая в горы!</p>
@@ -64,6 +67,7 @@
 				<div class="promo__button">
 					<a href="#" class="btn">Купить билет</a>
 				</div>
+			</div>
 		</section>
 	</div>
 	
@@ -74,7 +78,22 @@
 				<div class="traces__slider__item">
 					<section class="track">
 						<header class="track_header">
-							<h3 class="track__title"></h3>
+							<h3 class="track__title">Трасса #1</h3>
+							<ul class="track__list">
+								<li class="track__list-item">Высота 15 м.</li>
+								<li class="track__list-item">Возраст 13+</li>
+							</ul>
+						</header>
+						<div class="track__content">
+							<img src="#" alt="" class="track__content">
+							<p>Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.</p>
+						</div>
+					</section>
+				</div>
+				<div class="traces__slider__item">
+					<section class="track">
+						<header class="track_header">
+							<h3 class="track__title">Трасса #2</h3>
 							<ul class="track__list">
 								<li class="track__list-item">lorem</li>
 								<li class="track__list-item">lorem</li>
@@ -89,7 +108,7 @@
 				<div class="traces__slider__item">
 					<section class="track">
 						<header class="track_header">
-							<h3 class="track__title"></h3>
+							<h3 class="track__title">Трасса #3</h3>
 							<ul class="track__list">
 								<li class="track__list-item">lorem</li>
 								<li class="track__list-item">lorem</li>
@@ -104,7 +123,7 @@
 				<div class="traces__slider__item">
 					<section class="track">
 						<header class="track_header">
-							<h3 class="track__title"></h3>
+							<h3 class="track__title">Трасса #4</h3>
 							<ul class="track__list">
 								<li class="track__list-item">lorem</li>
 								<li class="track__list-item">lorem</li>
@@ -119,22 +138,7 @@
 				<div class="traces__slider__item">
 					<section class="track">
 						<header class="track_header">
-							<h3 class="track__title"></h3>
-							<ul class="track__list">
-								<li class="track__list-item">lorem</li>
-								<li class="track__list-item">lorem</li>
-							</ul>
-						</header>
-						<div class="track__content">
-							<img src="#" alt="" class="track__content">
-							<p>Lorem ipsum dolor sit amet.</p>
-						</div>
-					</section>
-				</div>
-				<div class="traces__slider__item">
-					<section class="track">
-						<header class="track_header">
-							<h3 class="track__title"></h3>
+							<h3 class="track__title">Трасса #5</h3>
 							<ul class="track__list">
 								<li class="track__list-item">lorem</li>
 								<li class="track__list-item">lorem</li>
@@ -154,41 +158,49 @@
 		<div class="stock__container">
 			<h2 class="stock__title">Акции</h2>
 			<div class="stock__discount">
-				<img src="#" alt="" class="discount__picture">
+				<img src="img/sales_company.jpg" alt="компании" class="discount__picture">
 				<p class="discount__text">Компаниям от 5 чел. скидка 10%</p>
 			</div>
 			<div class="stock__discount">
-				<img src="#" alt="" class="discount__picture">
+				<img src="img/sales_family.jpg" alt="многодетные" class="discount__picture">
 				<p class="discount__text">Многодетным семьям скидка 20%</p>
 			</div>
 			<div class="stock__discount">
-				<img src="#" alt="" class="discount__picture">
-				<p class="discount__text">Студентам по карте  isic 20%</p>
+				<img src="img/sales_isic.jpg" alt="isic" class="discount__picture">
+				<p class="discount__text">Студентам <br> по карте  isic 20%</p>
 			</div>
 		</div>
 	</section>
 	<section class="advantages">
 		<div class="advantages__bacground">
-			<h2 class="advantages__title"></h2>
+			<h2 class="advantages__title">у нас</h2>
 			<div class="advantages__content">
-				<img src="#" alt="" class="advantages__picture">
-				<p class="advantages__text"></p>
+				<img src="img/rope.png" alt="rope" class="advantages__picture">
+				<p class="advantages__text">Альпинистское снаряжение  
+					и страховочные устройства французской компании Petzl</p>
 			</div>
 			<div class="advantages__content">
-				<img src="#" alt="" class="advantages__picture">
-				<p class="advantages__text"></p>
+				<img src="img/sign.png" alt="sign" class="advantages__picture">
+				<p class="advantages__text">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)
+				</p>
 			</div>
 			<div class="advantages__content">
-				<img src="#" alt="" class="advantages__picture">
-				<p class="advantages__text"></p>
+				<img src="img/question.png" alt="question" class="advantages__picture">
+				<p class="advantages__text">У скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="picture">
-		<img src="#" alt="" class="picture__img">
-		<img src="#" alt="" class="picture__img">
-		<img src="#" alt="" class="picture__img">
+	<section class="picture-slider">
+		<div class="picture-slider__slide">
+			<img src="img/galery_1.jpg" alt="трасса" class="picture__img">
+		</div>
+		<div class="picture-slider__slide">
+			<img src="img/galery_2.jpg" alt="трасса2" class="picture__img">
+		</div>
+		<div class="picture-slider__slide">
+			<img src="img/galery_3.jpg" alt="трасса3" class="picture__img">
+		</div>
 	</section>
 	
 	<div class="wrapper-bcg">
@@ -319,8 +331,9 @@
 		</div>
 	</footer>
 	
-	<script src="jq/jquery-3.2.1.min.js"></script>
-	<script src="jq/scripts.js"></script>
+	<script type="text/javascript" src="jq/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="jq/scripts.js"></script>
 
 </body>
 </html>
