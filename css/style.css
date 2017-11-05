@@ -67,6 +67,9 @@ a {
 	font-size: 15,52px;
 }
 
+
+
+
 /*Для ширины 320px*/
 
 
@@ -257,6 +260,10 @@ a {
 
 /*Секция У нас*/
 
+
+
+
+
 .advantages__bacground {
 	background-image: url(../img/Y_nas-bcg.jpg);
 	background-repeat: no-repeat;
@@ -316,6 +323,7 @@ a {
 
 
 
+
 .picture-slider {
 	display: flex;
 	justify-content: center;
@@ -325,4 +333,88 @@ a {
 .picture__img {
 	height: 400px;
 	width: 100%;
+}
+
+
+/*Секция Цены*/
+
+
+.table__title {
+	display: flex;
+	justify-content: center;
+	font-size: 36px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	padding-top: 48px;
+	padding-bottom: 50px;
+}
+
+.table__title:after {
+	content: '';
+	display: flex;
+	margin-left: 5px;
+	width: 94px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+}
+
+
+.table__title {
+	display: none;
+}
+
+.prices__mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mobile__line {
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.mobile__line--list:after {
+	content: '';
+	background-image: url(../img/prev-mobile.png);
+	height: 25px;
+	width: 13px;
+	display: inline-block;
+	position: relative;
+	top: 7px;
+}
+
+.mobile__line--bcg {
+	background-color: #f1f1f1;
+}
+
+
+.mobile__text--price {
+	padding-left: 20px;
+}
+
+.prices__btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.prices__buy {
+	background-color: #932626;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 18px 38px;
+	margin-bottom: 17px;
+}
+
+.prices__safety {
+	border-bottom: 1px #000 solid;
 }
