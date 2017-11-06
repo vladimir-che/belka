@@ -5,5 +5,7 @@ $(document).ready(function(){
 
   $('.traces__slider').slick();
 
+  $('.reviews__wrapper').slick();
+
 
 });

@@ -117,18 +117,17 @@ a {
 }
 
 .promo__container {
+	display: flex;
+	flex-direction: column;
 	background-image: url(../img/promo_bcg.jpg);
 	background-position: top;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	height: 80vh;
 	min-height: 400px;
 }
 
-.promo {
-	display: flex;
-	flex-direction: column;
 
-}
 .promo__title {
 	display: flex;
 	justify-content: center;
@@ -152,7 +151,7 @@ a {
 }
 
 .promo__text {
-	height: 50px;
+	height: 20%;
 	width: 205px;
 	padding: 20px;
 	margin-bottom: 30px;
@@ -172,10 +171,11 @@ a {
 
 .traces__container {
 	background-image: url(../img/traces-bcg.jpg);
-	background-position: cover;
+	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 400px;
+	height: 100vh;
 }
 
 .traces__title {
@@ -200,28 +200,68 @@ a {
 	position: absolute;
 }
 
+.traces__slider {
+	margin: 0 auto;
+	height: 75vh;
+	width: 80%;
+}
+
 .track {
 	text-align: center;
+	background-color: rgba(77, 89, 100, 0.6);
+}
+
+.track__title {
+	font-size: 30px;
+	color: #c7c7d3;
+	padding: 15px 0;
 }
 
 .track__list {
 	list-style-type: none;
 }
 
+.track__list-item {
+	color: #f9f9f9;
+	margin-bottom: 10px;
+}
 
-/*Секция трассы*/
+.track__content {
+	color: #e7e7f2;
+}
+
+.track__img {
+	margin: 0 auto;
+}
+
+.track__text {
+	padding: 20px 0;
+}
+
+
+
+
+
+
+/*Секция скидки*/
+
+
+
+
+
+.stock__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 
 .stock__title {
-	display: flex;
-	justify-content: center;
 	font-size: 36px;
 	color: #000;
 	text-transform: uppercase;
 	text-align: center;
-	position: relative;
 	margin: 0;
-	padding-bottom: 50px;
 }
 
 .stock__title:after {
@@ -236,9 +276,7 @@ a {
 
 .stock__discount {
 	display: flex;
-	flex-wrap: wrap;
 	position: relative;
-	margin-bottom: 20px;
 	margin: 20px;
 }
 
@@ -328,6 +366,8 @@ a {
 	display: flex;
 	justify-content: center;
 	padding: 20px;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .picture__img {
@@ -417,4 +457,167 @@ a {
 
 .prices__safety {
 	border-bottom: 1px #000 solid;
+}
+
+
+
+/*Секция Отзывы*/
+
+
+
+
+
+.reviews {
+	margin: 10px;
+	background-color: rgba(234, 234, 235, 0.7);
+	min-height: 555px;
+}
+
+.reviews__wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.reviews__title {
+	display: flex;
+	justify-content: center;
+	font-size: 36px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.reviews__title:after {
+	content: '';
+	display: flex;
+	margin-left: 35px;
+	width: 94px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+}
+
+.reviews__body {
+	text-align: center;
+}
+
+.reviews__body__avatar {
+	margin: 0 auto;
+}
+
+.social__icon--insta {
+	display: inline-block;
+	background-image: url(../img/instagram.png);
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 21px;
+}
+
+.social__icon--vk {
+	display: inline-block;
+	background-image: url(../img/vk-bcg.png);
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 19px;
+}
+
+.reviews__body__content {
+	width: 70%;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.reviews__body div {
+	margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+/*Футер*/
+
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #22313f;
+	color: #dadae7;
+	font-size: 14px;
+}
+
+
+.footer__content {
+	order: 2;
+}
+
+.footer__btn {
+	order: 3;
+}
+
+.footer__content__nav, .footer__content__contacts, .footer__content__social {
+	margin: 0 10px;
+}
+
+.footer__content__social {
+	display: block;
+	margin: 12px 10px;
+}
+
+.contackts__list {
+	list-style: none;
+}
+
+.contackts__list li {
+	padding-bottom: 10px;
+}
+
+.contackts__placeholder:before {
+	content: '';
+	background-image: url(../img/placeholder.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 11px;
+	height: 19px;
+	padding-right: 5px;
+}
+
+.contackts__phone:before {
+	content: '';
+	background-image: url(../img/footer_phone.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	padding-right: 5px;
+}
+
+
+.content__nav__item {
+	list-style: none;
+	text-transform: uppercase;
+	padding: 5px 0;
+}
+
+.footer__btn {
+	position: relative;
+}
+
+.btn__rise-up {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-image: url(../img/rise_up.png);
+	background-repeat: no-repeat;
+	right: 10px;
+	bottom: 10px;
 }
