@@ -27,8 +27,29 @@
 					<a href="#" class="fast-contacts__link">addres</a>
 				</li>
 				
-				<a href="#" class="header__burger">Бургер</a>
-				
+				<a href="#" class="header__burger">
+					<div class="burger__icon"></div>
+				</a>
+			</ul>
+		</div>
+
+		<div class="burger_menu">
+			<ul class="burger_menu__list">
+				<li class="burger_menu__item">
+					<a href="#traces" class="burger-link">Трассы</a></li>
+				<li class="burger_menu__item">
+					<a href="#stock" class="burger-link">Акции</a></li>
+				<li class="burger_menu__item">
+					<a href="#prices" class="burger-link">Цены</a></li>
+				<li class="burger_menu__item">
+					<a href="#reviews" class="burger-link">Отзывы</a></li>
+				<li class="burger_menu__item">
+					<a href="#contackts" class="burger-link">Контакты</a></li>
+				<li class="burger_menu__item">
+					<a href="#""><img  src="img/twitter.png"  class="burger-social alt="twitter"></a>
+					<a href="#"><img src="img/vk.png" class="burger-social burger-social--vk" alt="vk"></a>
+					<a href="#"><img src="img/instagram.png" class="burger-social" alt="insta"></a>
+				</li>
 			</ul>
 		</div>
 
@@ -70,6 +91,7 @@
 	</div>
 	
 	<section class="traces">
+		<a name="traces" href="#"></a>
 		<div class="traces__container">
 			<h2 class="traces__title">Трассы</h2>
 			<div class="traces__slider">
@@ -153,6 +175,7 @@
 	</section>
 
 	<section class="stock">
+		<a  name="stock" href="#"></a>
 		<div class="stock__container">
 			<h2 class="stock__title">Акции</h2>
 			<div class="stock__discount">
@@ -170,6 +193,7 @@
 		</div>
 	</section>
 	<section class="advantages">
+		<a name="advantages" href="#"></a>
 		<div class="advantages__bacground">
 			<h2 class="advantages__title">у нас</h2>
 			<div class="advantages__content">
@@ -204,6 +228,7 @@
 	<div class="wrapper-bcg">
 
 		<section class="prices">
+			<a name="prices" href="#"></a>
 			<h2 class="table__title">Цены</h2>
 			<div class="prices__table">
 					
@@ -262,16 +287,71 @@
 
 
 			<div class="prices__mobile">
-				<div class="mobile__line mobile__line--list">
-					<a href="#" class="mobile__link">Выберите возраст</a></div>
-				<div class="mobile__line mobile__line--list"><a href="#" class="mobile__link">Выберете место</a></div>
-				<div class="mobile__line mobile__line--list"><a href="#" class="mobile__link">Выберете длительность</a></div>
-				<div class="mobile__line mobile__line--bcg">Стоимость абонемента 0₽</div>
+				<div class="mobile__line--list">
+					<div id="age" class="list__text">Выберите возраст</div>
+					<div class="list__icon"></div>
+				</div>
+
+				<div class="list_age">
+					<ul class="list_checklist">
+						<li class="list_checklist__item">
+							<p>Детский</p>
+							<p class="small-text">от 4 лет</p>
+						</li>
+						<li class="list_checklist__item">
+							<p>Взрослый</p>
+							<p class="small-text">от 7 лет</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="mobile__line--list">
+					<div id="place" class="list__text">Выберите место</div>
+					<div class="list__icon"></div>
+				</div>	
+
+				<div class="list_place">
+					<ul class="list_checklist">
+						<li class="list_checklist__item">
+							<p>все трассы</p>
+							<p>веревочный парк + скалодром</p>
+						</li>
+						<li class="list_checklist__item">
+							<p>скалодром</p>
+						</li>
+						<li class="list_checklist__item">
+							<p>веревочный парк</p>
+						</li>
+					</ul>
+				</div>		
+
+				<div class="mobile__line--list">
+					<div id="duration" class="list__text">Выберите длительность</div>
+					<div class="list__icon"></div>
+				</div>
+
+				<div class="list_duration">
+					<ul class="list_checklist">
+						<li class="list_checklist__item">
+							<p>Прохождение парка</p>
+							<p>за 3 часа</p>
+						</li>
+						<li class="list_checklist__item">
+							<p>Прохождение парка</p>
+							<p>за 12 часов</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="mobile__line mobile__line--bcg">
+					<p class="mobile__text">Стоимость абонемента</p>
+					<p class="mobile__text mobile__text--price">0₽</p>
+				</div>
 				<div class="mobile__line">
-					<p class="mobile__text mobile__text--price">Персональный оператор парка</p>
-					<p class="mobile__text mobile__text--price">600 ₽ /час</p>
-					<p class="mobile__text mobile__text--price">Каждый дополнительный час </p>
-					<p class="mobile__text mobile__text--price">500 ₽</p>
+					<p class="mobile__line--small">Персональный оператор парка</p>
+					<p class="mobile__line--small mobile__text--price">600 ₽ /час</p>
+					<p class="mobile__line--small">Каждый дополнительный час </p>
+					<p class="mobile__line--small mobile__text--price">500 ₽</p>
 				</div>
 			</div>
 
@@ -282,14 +362,12 @@
 				<a href="#" class="prices__safety">Техника безопасности (PDF)</a>
 			</div>
 
-
-
 		</section>
 
 		<section class="reviews">
+			<a name="reviews" href="#"></a>
 				<h2 class="reviews__title">Отзывы</h2>
 				<div class="reviews__wrapper">
-					
 					<div class="reviews__body">
 						<img src="img/rev_foto-1.png" class="reviews__body__avatar" alt="">						
 						<div class="reviews__body__name">Мария.</div>
@@ -328,6 +406,7 @@
 	<footer>
 		<div class="footer__content">
 			<div class="footer__content__contacts">
+				<a name="contackts" href="#"></a>
 				<ul class="contackts__list">
 					<li class="contackts__placeholder">Выборгское ш.,220</li>
 					<li class="contackts__phone">8 (812) 999-77-88</li>
@@ -335,11 +414,21 @@
 			</div>
 			<div class="footer__content__nav">
 				<ul class="content__nav__list">
-					<li class="content__nav__item">трассы</li>
-					<li class="content__nav__item">акции</li>
-					<li class="content__nav__item">цены</li>
-					<li class="content__nav__item">отзывы</li>
-					<li class="content__nav__item">контакты</li>
+					<li class="content__nav__item">
+						<a href="#traces" class="footer-link">Трассы</a>
+					</li>
+					<li class="content__nav__item">
+						<a href="#stock" class="footer-link">акции</a>
+					</li>
+					<li class="content__nav__item">
+						<a href="#prices" class="footer-link">цены</a>
+					</li>
+					<li class="content__nav__item">
+						<a href="#reviews" class="footer-link">отзывы</a>
+					</li>
+					<li class="content__nav__item">
+						<a href="#contackts" class="footer-link">контакты</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__content__social">

@@ -82,6 +82,7 @@ a {
 	list-style: none;
 	background-color: #e9e9f1;
 	padding-left: 20px;
+	height: 30px;
 }
 
 .fast-contacts__link--phone:before {
@@ -101,10 +102,49 @@ a {
 /*Бургер*/
 
 .header__burger {
-	width: 70px;
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
 }
 
+.burger__icon {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+ 	background-image: url(../img/burger-icon.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+ }
 
+
+.burger_menu {
+	display: none;
+	background-color: #e9e9f1;
+	border-top: 1px #000 solid;
+}
+
+.burger_menu__none {
+	display: block;
+}
+
+.burger_menu__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+.burger_menu__item {
+	padding-bottom: 18px;
+	font-size: 18px;
+}
+
+.burger-social {
+	display: inline-block;
+	vertical-align: top;
+}
 
 
 /*секция скалодром*/
@@ -414,29 +454,55 @@ a {
 }
 
 .mobile__line {
-	padding: 20px 0;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 20px 20px;
 }
 
+.mobile__line--list {
+	display: flex;
+	cursor: pointer;
+	border-top: 1px #000 solid;
+	width: 100%;
+	justify-content: space-between;
+}
 
-.mobile__line--list:after {
-	content: '';
+.list__text {
+	align-self: center;
+	width: 90%;
+	padding: 20px;
+}
+
+.list__icon {
 	background-image: url(../img/prev-mobile.png);
-	height: 25px;
-	width: 13px;
+	background-repeat: no-repeat;
 	display: inline-block;
-	position: relative;
-	top: 7px;
+	height: 25px;
+	width: 15px;
+	margin-top: 16px;
+	margin-right: 20px;
 }
+
 
 .mobile__line--bcg {
 	background-color: #f1f1f1;
+	width: 100%;
+	border-top: 1px #000 solid;
 }
 
 
+.mobile__text {
+	width: 80%;
+}
+
+.mobile__line--small {
+	width: 80%;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
 .mobile__text--price {
-	padding-left: 20px;
+	width: 20%;
 }
 
 .prices__btn {
@@ -452,13 +518,58 @@ a {
 	text-transform: uppercase;
 	color: #fff;
 	padding: 18px 38px;
-	margin-bottom: 17px;
+	margin: 17px;
 }
 
 .prices__safety {
 	border-bottom: 1px #000 solid;
+	margin-bottom: 20px;
 }
 
+
+.list_age {
+	display: none;
+	color: #dadae7;
+	background-color: #22313f;
+	justify-content: center;
+	width: 100%;
+}
+
+.list_checklist {
+	text-align: center;
+	width: 100%;
+	list-style: none;
+}
+
+.list_checklist__item {
+	text-transform: uppercase;
+	padding: 15px 10px;
+}
+
+.small-text {
+	font-size: 14px;
+}
+
+.list_place {
+	display: none;
+	color: #dadae7;
+	background-color: #22313f;
+	justify-content: center;
+	width: 100%;
+}
+
+.list_duration {
+	display: none;
+	color: #dadae7;
+	background-color: #22313f;
+	justify-content: center;
+	width: 100%;
+}
+
+.list__display--flex {
+	display: flex;
+}
+ 
 
 
 /*Секция Отзывы*/
@@ -468,14 +579,17 @@ a {
 
 
 .reviews {
-	margin: 10px;
-	background-color: rgba(234, 234, 235, 0.7);
+	background-image: url(../img/rev-bcg.jpg);
+	background-position: top;
+	background-size: 100%;
 	min-height: 555px;
 }
 
 .reviews__wrapper {
+	background-color: rgba(234, 234, 235, 0.7);
 	width: 80%;
 	margin: 0 auto;
+	padding: 45px 0;
 }
 
 .reviews__title {
@@ -488,7 +602,7 @@ a {
 	position: relative;
 	margin: 0;
 	padding-top: 40px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .reviews__title:after {
@@ -604,6 +718,11 @@ footer {
 	list-style: none;
 	text-transform: uppercase;
 	padding: 5px 0;
+}
+
+.footer-link {
+	color: #dadae7;
+	font-size: 14px;
 }
 
 .footer__btn {
