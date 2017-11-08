@@ -63,19 +63,19 @@
 					<nav class="main-nav">
 						<ul class="main-nav__list">
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Трассы</a>
+								<a href="#traces" class="main-nav__link">Трассы</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Акции</a>
+								<a href="#stock" class="main-nav__link">Акции</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Цены</a>
+								<a href="#prices" class="main-nav__link">Цены</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Отзывы</a>
+								<a href="#reviews" class="main-nav__link">Отзывы</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Контакты</a>
+								<a href="#contackts" class="main-nav__link">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -183,17 +183,17 @@
 		<a  name="stock" href="#"></a>
 		<div class="stock__container">
 			<h2 class="stock__title">Акции</h2>
+
 			<div class="stock__discount">
-				<img src="img/sales_company.jpg" alt="компании" class="discount__picture">
-				<p class="discount__text">Компаниям от 5 чел. скидка 10%</p>
-			</div>
-			<div class="stock__discount">
-				<img src="img/sales_family.jpg" alt="многодетные" class="discount__picture">
-				<p class="discount__text">Многодетным семьям скидка 20%</p>
-			</div>
-			<div class="stock__discount">
-				<img src="img/sales_isic.jpg" class="discount__picture" alt="isic">
-				<p class="discount__text">Студентам <br> по карте  isic 20%</p>
+				<div class="discount__container discount__container--company">
+					<p class="discount__text">Компаниям от 5 чел. скидка 10%</p>
+				</div>
+				<div class="discount__container discount__container--discout">
+					<p class="discount__text">Многодетным семьям скидка 20%</p>
+				</div>
+				<div class="discount__container discount__container--students">
+					<p class="discount__text">Студентам <br> по карте  isic 20%</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -235,12 +235,18 @@
 		<section class="prices">
 			<h2 class="table__title">Цены</h2>
 			<a name="prices" href="#"></a>
-			<div class="prices__table">
-					
+
+
+			<table class="prices__table">
 				<tr class="table__line">
-					<td class="table__collumn">asc</td>
-					<td class="table__collumn"></td>
-					<td class="table__collumn"></td>
+					<td class="table__collumn">&nbsp;</td>
+					<td class="table__collumn">&nbsp; </td>
+					<td class="table__collumn">
+						<p class="table__text--big">Детский</p>
+					</td>
+					<td class="table__collumn">
+						<p class="table__text--big">Взрослый</p>
+					</td>
 				</tr>
 				<tr class="table__line">
 					<td class="table__collumn"></td>
@@ -288,7 +294,7 @@
 				<tr class="table__line">
 					<td class="table__collumn"></td>
 				</tr>
-			</div>
+			</table>
 
 
 			<div class="prices__mobile">
@@ -374,7 +380,17 @@
 				<h2 class="reviews__title">Отзывы</h2>
 				<div class="reviews__wrapper">
 					<div class="reviews__body">
-						<img src="img/rev_foto-1.png" class="reviews__body__avatar" alt="">						
+						<img src="img/rev_foto-1.png" class="reviews__body__avatar" alt="">			
+						<div class="reviews__body__name">Алексей.</div>
+						<div class="reviews__body__status">Скалолаз-любитель.</div>	
+						<div class="reviews__body__social">
+							<a href="#" class="social__icon--insta"></a>
+							<a href="#" class="social__icon--vk"></a>
+						</div>
+						<div class="reviews__body__content">Интересные трассы, вкусная еда и самые приветливые тренера!</div>
+					</div>
+					<div class="reviews__body">
+						<img src="img/rev_foto-2.png" class="reviews__body__avatar" alt="">	
 						<div class="reviews__body__name">Мария.</div>
 						<div class="reviews__body__status">Студентка.</div>
 						<div class="reviews__body__social">
@@ -384,24 +400,15 @@
 						<div class="reviews__body__content">Лучший скалодром в городе!</div>
 					</div>
 					<div class="reviews__body">
-						<img src="img/rev_foto-1.png" class="reviews__body__avatar" alt="">	
-						<div class="reviews__body__name"></div>
-						<div class="reviews__body__status"></div>
+						<img src="img/rev_foto-3.png" class="reviews__body__avatar" alt="">	
+						<div class="reviews__body__name">Екатерина.</div>
+						<div class="reviews__body__status">Мама троих детей.</div>
 						<div class="reviews__body__social">
 							<a href="#" class="social__icon--insta"></a>
 							<a href="#" class="social__icon--vk"></a>
 						</div>
-						<div class="reviews__body__content"></div>
-					</div>
-					<div class="reviews__body">
-						<img src="img/rev_foto-1.png" class="reviews__body__avatar" alt="">	
-						<div class="reviews__body__name"></div>
-						<div class="reviews__body__status"></div>
-						<div class="reviews__body__social">
-							<a href="#" class="social__icon--insta"></a>
-							<a href="#" class="social__icon--vk"></a>
+						<div class="reviews__body__content">Парк «BELKA» - отличная альтернатива наскучившим походам в кино и кафе.
 						</div>
-						<div class="reviews__body__content"></div>
 					</div>
 					
 				</div>
