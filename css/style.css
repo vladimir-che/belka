@@ -191,10 +191,14 @@ a {
 }
 
 .promo__text {
-	height: 20%;
-	width: 205px;
+	/*height: 20%;*/
+	width: 70%;
 	padding: 20px;
 	margin-bottom: 30px;
+}
+
+.promo__text--all {
+	display: none;
 }
 
 .promo__button {
@@ -206,6 +210,8 @@ a {
 
 
 /*Секция Трассы*/
+
+
 
 
 
@@ -249,6 +255,7 @@ a {
 .track {
 	text-align: center;
 	background-color: rgba(77, 89, 100, 0.6);
+	margin: 0 10px;
 }
 
 .track__title {
@@ -333,6 +340,13 @@ a {
 	margin: auto;
 }
 
+.stock__discount--company {
+	background-image: url(../img/sales_company.jpg);
+	background-position: 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 
 
@@ -346,6 +360,7 @@ a {
 	background-image: url(../img/Y_nas-bcg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	margin: 20px;
 	min-height: 500px;
 }
@@ -402,6 +417,8 @@ a {
 
 
 
+
+
 .picture-slider {
 	display: flex;
 	justify-content: center;
@@ -411,13 +428,26 @@ a {
 }
 
 .picture__img {
-	height: 400px;
+	/*height: 400px;*/
 	width: 100%;
 }
 
 
+
+
+
 /*Секция Цены*/
 
+.wrapper-bcg {
+	background-image: url(../img/rev-bcg.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.prices__table {
+	display: none;
+}
 
 .table__title {
 	display: flex;
@@ -428,7 +458,7 @@ a {
 	text-align: center;
 	position: relative;
 	margin: 0;
-	padding-top: 48px;
+	padding-top: 20px;
 	padding-bottom: 50px;
 }
 
@@ -442,10 +472,6 @@ a {
 	position: absolute;
 }
 
-
-.table__title {
-	display: none;
-}
 
 .prices__mobile {
 	display: flex;
@@ -579,9 +605,7 @@ a {
 
 
 .reviews {
-	background-image: url(../img/rev-bcg.jpg);
-	background-position: top;
-	background-size: 100%;
+	
 	min-height: 555px;
 }
 
@@ -739,4 +763,114 @@ footer {
 	background-repeat: no-repeat;
 	right: 10px;
 	bottom: 10px;
+}
+
+
+
+
+
+
+
+/*Медиа условия*/
+
+
+
+@media (min-width: 768px) {
+
+
+	.header__burger {
+		display: none;
+	}
+	
+	.promo__text {
+		width: 80%;
+		line-height: 1.7;
+		color: #22313f;
+		padding: 0 20px;
+		margin: 0;
+	}
+
+	.promo__text--all {
+		display: block;
+	}
+	
+	.fast-contacts__list {
+		justify-content: flex-end;
+	}
+
+	.fast-contacts__item {
+		margin-left: 40px;
+		margin-right: 20px;
+	}
+
+	.fast-contacts__link--addres:before {
+		content: '';
+		display: inline-block;
+		width: 16px;
+		height: 18px;
+		background-image: url(../img/placeholder-fast.png);
+		background-repeat: no-repeat;
+		position: relative;
+		top: 2px;
+		right: 9px;
+	}
+
+
+	.fast-contacts__item--time:before {
+		content: '';
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background-image: url(../img/time.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		right: 9px;
+	}
+
+	.none {
+		display: flex;
+	}
+
+	.page-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 10px 20px;
+	}
+
+	.main-nav__list {
+		list-style: none;
+		display: flex;
+	}
+	
+	.main-nav__item {
+		margin-left: 45px;
+		position: relative;
+	}
+	
+	.promo__container {
+		/*height: 100vh;*/
+	}
+
+	.promo__title {
+		padding-top: 20px;
+	}
+	
+	.promo__button {
+		margin-top: 20px;
+	}
+
+	.stock__discount {
+		width: 100%;
+	}
+
+
+
+
+
+
+
+
+
 }
